@@ -31,8 +31,7 @@ body {
   font-size: 22px;
   line-height: 1;
   font-weight: 800;
-  padding-top: 10px;
-  margin: 0 0 20px 0;
+  margin: 25px 0 20px 0;
 }
 
 .container h3 {
@@ -43,7 +42,7 @@ body {
 
 .info, .projectlist {
   line-height: 1.6;
-  padding: 1px 10px 10px;
+  padding: 1px 10px 0;
   margin: 20px auto 0;
   width: 820px;
   /* width: 60%; */    /* 940px / 1024px */
