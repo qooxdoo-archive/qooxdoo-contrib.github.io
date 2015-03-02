@@ -40,11 +40,11 @@ body {
   margin-top: 0;
 }
 
-.info, .projectlist {
+.info, .main {
   line-height: 1.6;
   padding: 1px 10px 0;
   margin: 20px auto 0;
-  width: 820px;
+  width: 830px;
   /* width: 60%; */    /* 940px / 1024px */
 }
 
@@ -52,11 +52,8 @@ body {
   font-style: italic;
 }
 
-.projectlist h2 {
-  margin-top: 0;
-  display: inline;
-  text-decoration: underline;
-  padding: 0 5px 0 0;
+.main p {
+  width: 550px;
 }
 
 .hidden {
@@ -64,19 +61,8 @@ body {
 }
 
 /* @overwrite */
-body { min-width: 0 }
-#footer-wrapper { margin-top: 0; height: auto }
-#footer .legal-link { display: block }
+body { min-width: 0; }
 #header h1 { width: auto; }
-
-/**
- *  sticky footer
- *  http://www.cssstickyfooter.com/de/
- */
-html, body, .wrapper {height: 100%;}
-body > .wrapper { height: auto; min-height: 100%; }
-.container  { padding-bottom: 20px; }
-#footer-wrapper { margin-top: -45px; height: 20px; }
 
 /* --- responsive --- */
 
@@ -85,27 +71,18 @@ body > .wrapper { height: auto; min-height: 100%; }
 @media (max-width: 979px) {
   /* .container h1 { color: green } */
 
-  .container { width: 724px; padding: 0 10px }
-  .info, .projectlist { width: auto }
+  .info, .main { width: auto }
 
   /* @overwrite */
-  #header { width: auto }
-  #header h1 { width: auto; padding: 0 20px }
-
-  #footer { width: auto; margin-left: 40px }
+  #header h1 { width: 300px; padding-left: 20px; }
 }
 
 @media (max-width: 767px) {
   /* .container h1 { color: blue } */
 
   body { padding: 0 }
-  .container { width: auto; padding: 0 10px }
-
-  /* @overwrite */
-  #header h1 { float: none }
-
-  #footer-wrapper { height: auto }
-  /* !important is unfortunately necessary */
+  .container { width: auto; padding: 0 }
+  .main p { width: auto }
 }
 
 @media (max-width: 480px) {
