@@ -1,2 +1,1 @@
-qooxdoo-contrib.github.io
-=========================
+http://qooxdoo-contrib.github.io
